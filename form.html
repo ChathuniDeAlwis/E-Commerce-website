@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h2><a href="#" class="brand"> SERENDIB</a></h2>
+        <ul class="navigation">
+            <li><a href="#"> Home</a></li>
+            <li> <a href="#"> Comments</a></li>
+            <li> <a href="shop.html"> Shop</a></li>
+            <li><a href="#"> Quiz</a></li>
+            <li><a href="#"> Gallery</a></li>
+            <li><a href="#"> Sitemap</a></li>
+            <li><a href="#"> About Us</a></li>
+        </ul>
+        </header>
+    <div class="container"> 
+        <!-- <form action=""> -->
+        <form action="/submit-form">
+            <div class="row">
+                <!-- creating the BILLLING ADDRESS colomn  -->
+                <div class="col">
+                    <h2 class="title">billing address</h2>
+                    <div class="inputBox">
+                        <span>full name</span>
+                        <!-- make filling "name" is compulsary -->
+                        <input type="text" id="name" placeholder="john deo" required> 
+                    </div>
+                    <div class="inputBox">
+                        <span>email</span>
+                        <!-- make filling "email" is compulsary -->
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>address</span>
+                        <input type="text" placeholder="room-street-locality" >
+                    </div>
+                    <div class="inputBox">
+                        <span>city</span>
+                        <input type="text" placeholder="colombo" >
+                    </div>
+                    <div class="inputBox">
+                        <span>state : </span>
+                        <input type="text" placeholder="sri-lanka" >
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code</span>
+                        <input type="text" placeholder="123 456" >
+                    </div>
+                </div>
+
+            <!-- creating the PAYMENT colomn -->
+                <div class="col">
+                    <h2 class="title">payment</h2>
+                    <div class="inputBox">
+                        <span>cards accepted</span>
+                        <img src="img/card_img.png" alt="cart-image">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card : </span>
+                        <input type="text" placeholder="mr.john deo">
+                    </div>
+                    
+                    <div class="inputBox">
+                        <span>credit card number</span>
+                        <!-- make filling "credit card n" is compulsary -->
+                        <input type="number" id="cc" placeholder="1111-2222" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>exp mont : </span>
+                        <input type="text" placeholder="january">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp year : </span>
+                        <input type="text" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>cw</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+            </div>
+            <button class="btn" onclick="validateForm()">proceed to checkout</button>
+            <script>
+                function validateForm() {
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var cc = document.getElementById("cc").value;
+                    /*validate the email*/
+                    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                
+                    if (name == "" || email == "" || cc == "") {
+                        alert("Please fill all the fields");
+                        return false;
+                    }
+                
+                    if (email.match(validRegex)) {
+                        alert("Purchase Successfully");
+                        return true;
+                    } else {
+                        /*send the error message*/
+                        alert("Invalid email address!");
+                        return false;
+                    }
+                }
+            </script>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-img">
+            <!-- website logo in footer -->
+            <a href="../../home.html">
+                <img
+                src="image.jpg"
+                alt="footer logo"
+                width="200"
+                aria-label="link to home page"
+                />
+              </a>
+              
+          </div>
+          <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+            <p class="a">Navigation</p>
+            <!-- footer navigation -->
+            <ul class="no-bullet">
+              <li><a href="../../home.html">HOME</a></li>
+              <li><a href="shop.html">SHOP</a></li>
+              <li><a href="../../query_form/queryForm.html">QUERY FORM</a></li>
+              <li><a href="../../QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="../SVG/sitemap.html">SITE MAP</a></li>
+              <li> <a href="../../QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
+            </ul>
+          </div>
+          <div class="footer-about">
+            <!-- footer about area -->
+            <p class="b">About the website</p>
+            <p class="justify-text">
+                This website was made as part of our web module course work. You will discover a contemporary layout with a focus on offering simple-to-access information on Sri Lanka.Our website tries to offer a user-friendly experience with a focus on simplicity and ease of use. I hope you like reading this and that you find the material helpful.
+
+            </p>
+          </div>
+          <div class="footer-contact">
+            <!-- footer contact info -->
+            <p class="c"><strong>Contact us</strong></p>
+            <p class="info">
+                +94 740601627 <br /><br />
+                No.11, <br />
+                Farm gardens, <br />
+                palathota,<br />
+                Kalutara south.
+            </p>
+          </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-content">
+          
+        </div>
+        <hr class="footer-hr">
+        <!-- link the editor's page -->
+        <p class="page-credits">Created by <a href="editor.html" >Chathuni De Alwis</a></p>
+      </div>
+</body>
+</html>

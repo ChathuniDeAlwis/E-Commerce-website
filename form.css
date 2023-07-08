@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Dancing+Script:wght@400;500&family=Edu+NSW+ACT+Foundation&family=Fasthand&family=Itim&family=Josefin+Sans:ital@1&family=Kalam&family=Lato&family=Libre+Baskerville:ital@1&family=Lilita+One&family=Lobster&family=Open+Sans:ital,wght@1,500&family=Playfair+Display:ital@1&family=Poppins:wght@300&family=Roboto&display=swap');
+
+
+*{
+  font-family: Josefin Sans;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform:capitalize;
+  transition: all .2s linear;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:80px 25px 25px 25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #159895 60%, #1A5F7A 40.1%);
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #A3DDCB;
+  box-shadow: 0 5px 10px rgba(234, 113, 216, 0.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size:x-large;
+  color:rgb(104, 46, 87);
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #000000;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #8260e0;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #cee39d);
+}
+.btn{ /*make the butoon desings*/
+  padding: 10px;
+  background-color: #7C3E66;
+  color: #ffffff;
+  font-size: large;
+  border: 2px solid #293462;
+  align-items: center;
+  font-weight:bold;
+}
+.btn:hover{
+  background-color:#3F497F;
+  color: white;
+  font-weight:bolder;
+  font-size: larger;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/*creating the footer css*/
+.footer{
+  float: right;
+  width: 100%;
+  font-family: 'Rubik', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color:#170e34;
+  margin:0;
+  background :linear-gradient(to bottom, rgba(11, 2, 28, 0.5),rgb(4, 102, 102));
+}
+.a,.b,.c{
+    font-family: 'Rubik', sans-serif;
+    color:#170e34;
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.footer-content{/* footer main div css */
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.no-bullet{
+  list-style-type:none;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+
+}
+  a {
+  text-decoration: none;
+  color: #170e34;
+}
+  a:hover {/* all anchors on hover */
+  text-decoration: none;
+  color: white;
+}
+.text-left{
+  text-align: left ;
+}
+.justify-text{
+  text-align: justify;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+    
+}
+.info{
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+
+}
+.footer-img{
+  text-align: center;
+  width: 20%;
+}
+.footer-navigation{
+  margin-left: 1px;
+  margin-right: 1px;
+  width: 15%;
+  
+}
+.footer-about{/* about section in footer */
+  width: 45%;
+}
+.footer-contact{/* contact section in footer */
+  text-align: right;
+  margin-left: 1px;
+  margin-right: 1px;
+  width: 15%;
+}
+.footer-hr{
+  color: white;
+  background-color: white;
+  height: 1px;
+  width: 100%;
+}
+.page-credits{/* page credits section */
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+/*header*/
+header{
+  z-index: 10;
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  color:#fff;
+  transition: 0.5s ease;
+  
+}
+.showcase{
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.brand{
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+.navigation{
+    display:flex;
+    
+}
+.navigation li{
+    margin:0 15px;
+}
+
+.navigation li:first-child{
+    margin-left:0;
+}
+.navigation li:last-child{
+    margin-right:0;
+}
+.navigation  a{
+  position: relative;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s ease;
+  text-transform: capitalize;
+}
+.navigation a:before{
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+.navigation a:hover:before{
+  width: 100%;
+}

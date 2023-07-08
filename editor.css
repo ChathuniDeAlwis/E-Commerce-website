@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Dancing+Script:wght@400;500&family=Edu+NSW+ACT+Foundation&family=Fasthand&family=Itim&family=Josefin+Sans:ital@1&family=Kalam&family=Lato&family=Lilita+One&family=Lobster&family=Open+Sans:ital,wght@1,500&family=Playfair+Display:ital@1&family=Poppins:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Dancing+Script:wght@400;500&family=Edu+NSW+ACT+Foundation&family=Fasthand&family=Itim&family=Josefin+Sans:ital@1&family=Kalam&family=Lato&family=Libre+Baskerville:ital@1&family=Lilita+One&family=Lobster&family=Open+Sans:ital,wght@1,500&family=Playfair+Display:ital@1&family=Poppins:wght@300&family=Roboto&display=swap');
+body{
+    background-color:#bff6c6;   
+}
+body{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.editor-detail{
+    text-align: center;
+    color: darkblue;
+    font-weight: bolder;
+    font-family: Libre Baskerville;
+    padding-top: 80px;
+}
+.one,.two,.three,.four{
+    text-align: center;
+    font-weight: 800;
+}
+h2{
+    background-color:#4CA1A3;
+    color: aliceblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+a{ /*link to other pges*/
+    color: #9E4784;
+    font-family: Alata;
+}
+.add{
+    padding-bottom: 40px;
+}
+.footer{
+float: left;
+font-family: 'Rubik', sans-serif;
+padding-top: 40px;
+padding-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px;
+color:#170e34;
+margin:0;
+background: linear-gradient(to bottom, rgba(11, 2, 28, 0.5),rgb(4, 102, 102));
+}
+.a,.b,.c{
+    font-family: 'Rubik', sans-serif;
+    color:#170e34;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.footer-content{/* footer main div css */
+display: flex;
+flex-direction: row;
+}
+.no-bullet{
+list-style-type:none;
+padding: 0;
+font-family: 'Rubik', sans-serif;
+
+}
+a {
+text-decoration: none;
+color: #170e34;
+padding-bottom: 1px;
+}
+.name{
+    color: #EA5455;
+}
+.name:hover{
+    color: #B46060;
+}
+a:hover {/* all anchors on hover */
+text-decoration: none;
+color: white;
+}
+.text-left{
+text-align: left ;
+}
+.justify-text{
+text-align: justify;
+font-weight: bold;
+font-family: 'Rubik', sans-serif;
+    
+}
+.info{
+font-weight: bold;
+font-family: 'Rubik', sans-serif;
+}
+
+.footer-img{
+text-align: center;
+width: 20%;
+}
+
+.footer-navigation{
+margin-left: 1px;
+margin-right: 1px;
+width: 15%;
+}
+.footer-about{/* about section in footer */
+width: 45%;
+}
+.footer-contact{/* contact section in footer */
+text-align: right;
+margin-left: 1px;
+margin-right: 1px;
+width: 15%;
+}
+.footer-hr{
+color: white;
+background-color: white;
+height: 1px;
+width: 100%;
+}
+
+.page-credits{/* page credits section */
+text-align: center;
+margin-bottom: 0;
+    font-weight: bold;
+    font-size: larger;
+}
+@media(max-width:1000px){
+    .content{
+        width: 45%;
+    }
+}
+@media(max-width:750px){
+    .content{
+        width: 100%;
+    }
+}
+
+/*header*/
+header{
+    z-index: 10;
+    position: absolute;
+    height: 100px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    color:#fff;
+    transition: 0.5s ease;
+    
+}
+.showcase{
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.brand{
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navigation{
+    display:flex;
+    
+}
+.navigation li{
+    margin:0 15px;
+}
+
+.navigation li:first-child{
+    margin-left:0;
+}
+.navigation li:last-child{
+    margin-right:0;
+}
+.navigation  a{
+    position: relative;
+    color: darkgoldenrod;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s ease;
+    text-transform: capitalize;
+}
+.navigation a:before{
+    content: '';
+    position: absolute;
+    background: #000;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+.navigation a:hover:before{
+    width: 100%;
+}

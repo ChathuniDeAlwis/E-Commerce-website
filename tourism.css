@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lilita+One&family=Open+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Changa:wght@600&family=Dancing+Script:wght@400;500&family=Edu+NSW+ACT+Foundation&family=Fasthand&family=Itim&family=Josefin+Sans:ital@1&family=Kalam&family=Lalezar&family=Lato&family=Libre+Baskerville:ital@1&family=Lilita+One&family=Lobster&family=Lobster+Two:ital,wght@1,700&family=Open+Sans:ital,wght@1,500&family=Playfair+Display:ital@1&family=Poppins:wght@300&family=Roboto&family=Secular+One&display=swap');
+
+
+*{margin: 0;
+    padding: 0;}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2017/04/01/10/44/sea-2193341_1280.jpg");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    background-attachment:fixed;
+    overflow:hidden;
+}
+
+.frame3 { /*make the topic*/
+    font-family: Lobster Two;
+    font-size:xx-large;
+    text-align:center;
+    align-items: center;
+    font-size: 65px;
+    color: #ede5f2;
+    text-shadow: 0 0 10px #F7C04A;
+    display: none;
+    padding: 10px 0 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.frame3 span {
+    display:block;
+    margin-top: -360px;
+  }
+  
+.name1{ 
+    font-family: 'Lato';
+    font-size: 180%;
+    font-weight: 800;
+    padding-top: 150px;
+    padding-left: 80px;
+}
+.name2{
+    font-family: 'Lato';
+    font-size: 180%;
+    text-align: left;
+    font-weight: 800;
+    padding-left: 800px;
+}
+.name3{
+    font-family: 'Lato';
+    font-size: 180%;
+    font-weight: 800;
+    padding-top: 30px;
+    padding-left: 80px;
+}
+.name4{
+    font-family: 'Lato';
+    font-size: 180%;
+    text-align: left;
+    font-weight: 800;
+    padding-left: 800px;
+}
+
